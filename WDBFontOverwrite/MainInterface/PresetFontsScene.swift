@@ -107,7 +107,7 @@ private extension PresetFontsScene {
                             font.postScriptName,
                             size: 18)
                         )
-                }
+                }.disabled(kfd == 0)
             }
         } header: {
             Text("Fonts")
