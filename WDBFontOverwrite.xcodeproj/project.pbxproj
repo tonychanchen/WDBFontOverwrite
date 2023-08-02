@@ -40,9 +40,9 @@
 		C82854152A781CDD0050E059 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C82854142A781CDD0050E059 /* Dynamic */; };
 		C82854202A78DFCD0050E059 /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = C82854192A78DFCD0050E059 /* offsets.m */; };
 		C82854212A78DFCD0050E059 /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = C828541B2A78DFCD0050E059 /* vm_unaligned_copy_switch_race.c */; };
-		C82854222A78DFCD0050E059 /* vnode.c in Sources */ = {isa = PBXBuildFile; fileRef = C828541C2A78DFCD0050E059 /* vnode.c */; };
 		C82854232A78DFCD0050E059 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = C828541D2A78DFCD0050E059 /* grant_full_disk_access.m */; };
 		C8906FB02A78E0AF003A514C /* fun.m in Sources */ = {isa = PBXBuildFile; fileRef = C8906FAF2A78E0AF003A514C /* fun.m */; };
+		C8C43BF32A796C2A008B08F9 /* vnode.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BF22A796C2A008B08F9 /* vnode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,7 +101,6 @@
 		C82854192A78DFCD0050E059 /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = offsets.m; path = WDBFontOverwrite/offsets.m; sourceTree = SOURCE_ROOT; };
 		C828541A2A78DFCD0050E059 /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vm_unaligned_copy_switch_race.h; path = WDBFontOverwrite/vm_unaligned_copy_switch_race.h; sourceTree = SOURCE_ROOT; };
 		C828541B2A78DFCD0050E059 /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vm_unaligned_copy_switch_race.c; path = WDBFontOverwrite/vm_unaligned_copy_switch_race.c; sourceTree = SOURCE_ROOT; };
-		C828541C2A78DFCD0050E059 /* vnode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vnode.c; path = WDBFontOverwrite/vnode.c; sourceTree = SOURCE_ROOT; };
 		C828541D2A78DFCD0050E059 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = grant_full_disk_access.m; path = WDBFontOverwrite/grant_full_disk_access.m; sourceTree = SOURCE_ROOT; };
 		C828541E2A78DFCD0050E059 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = grant_full_disk_access.h; path = WDBFontOverwrite/grant_full_disk_access.h; sourceTree = SOURCE_ROOT; };
 		C828541F2A78DFCD0050E059 /* vnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vnode.h; path = WDBFontOverwrite/vnode.h; sourceTree = SOURCE_ROOT; };
@@ -109,6 +108,7 @@
 		C88020F92A7634FE0055B5E8 /* libkfd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libkfd.h; sourceTree = "<group>"; };
 		C8906FAE2A78E0AF003A514C /* fun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fun.h; sourceTree = "<group>"; };
 		C8906FAF2A78E0AF003A514C /* fun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fun.m; sourceTree = "<group>"; };
+		C8C43BF22A796C2A008B08F9 /* vnode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = vnode.m; path = WDBFontOverwrite/vnode.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +232,7 @@
 				C82854192A78DFCD0050E059 /* offsets.m */,
 				C828541B2A78DFCD0050E059 /* vm_unaligned_copy_switch_race.c */,
 				C828541A2A78DFCD0050E059 /* vm_unaligned_copy_switch_race.h */,
-				C828541C2A78DFCD0050E059 /* vnode.c */,
+				C8C43BF22A796C2A008B08F9 /* vnode.m */,
 				C828541F2A78DFCD0050E059 /* vnode.h */,
 				6500C4062A763226007C2370 /* thanks_opa334dev_htrowii.h */,
 				6500C40E2A763226007C2370 /* thanks_opa334dev_htrowii.m */,
@@ -405,7 +405,6 @@
 				4FE5EF452966AD87003384EC /* FontDiscoveryScene.swift in Sources */,
 				4FF28A1229679EEC00143640 /* ExplanationView.swift in Sources */,
 				C8906FB02A78E0AF003A514C /* fun.m in Sources */,
-				C82854222A78DFCD0050E059 /* vnode.c in Sources */,
 				C5C9A7932959261000466D87 /* WDBFontOverwriteApp.swift in Sources */,
 				4FE5EF38296561A5003384EC /* FileEditorView.swift in Sources */,
 				6500C4192A763226007C2370 /* thanks_opa334dev_htrowii.m in Sources */,
@@ -421,6 +420,7 @@
 				4FE5EF3329640075003384EC /* WDBImportCustomFontPickerViewControllerDelegate.swift in Sources */,
 				C5C9A7A12959263A00466D87 /* OverwriteFontImpl.swift in Sources */,
 				4F4E64A7295F9AB600D4F04D /* CustomFontsScene.ViewModel.swift in Sources */,
+				C8C43BF32A796C2A008B08F9 /* vnode.m in Sources */,
 				6500C4182A763226007C2370 /* helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

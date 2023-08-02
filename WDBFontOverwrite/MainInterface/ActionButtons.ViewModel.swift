@@ -10,13 +10,7 @@ import UIKit.UIApplication
 extension ActionButtons {
     struct ViewModel {
         func clearKBCache() {
-            grant_full_disk_access { error in
-                if error != nil {
-                    print("can't get disk access")
-                } else {
-                    _UIKeyboardCache.purge()
-                }
-            }
+            _UIKeyboardCache.purge()
         }
         
         @available(iOS 15, *)
