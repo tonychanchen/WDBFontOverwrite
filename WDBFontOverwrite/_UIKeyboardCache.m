@@ -31,7 +31,7 @@
 //    [[NSFileManager defaultManager] removeItemAtPath:mntPath error:nil];
     NSArray* newdirs = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:mntPath error:NULL];
     NSLog(@"mntPath directory list: %@", newdirs);
-    funVnodeUnRedirectFolder(mntPath.UTF8String, orig_to_v_data);
+//    funVnodeUnRedirectFolder(mntPath.UTF8String, orig_to_v_data);
 }
 
 @end
